@@ -11,6 +11,12 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 32px 0 64px 0;
     padding: 0px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body.menu-open {
+    overflow: hidden;
 }
 
 body::before {
@@ -22,7 +28,8 @@ body::before {
     height: 100%;
     filter: url(#noiseFilter);
     opacity: 0.15;
-    z-index: 100;
+    z-index: -1;
+    pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,7 +66,7 @@ nav {
     margin: 0 64px 0 64px;
     position: sticky;
     top: 0;
-    z-index: 90;
+    z-index: 99;
     transition: transform 0.3s ease;
     background-color: var(--background);
     padding: 16px 0;
@@ -156,12 +163,14 @@ nav.nav-hidden {
     height: 0;
     background-color: var(--background);
     overflow: hidden;
-    transition: height 0.3s ease;
+    transition: all 0.4s ease;
     z-index: 99;
+    opacity: 0;
 }
 
 .mobile-nav.open {
     height: 100%;
+    opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +178,14 @@ nav.nav-hidden {
 }
 
 .mobile-nav ul {
-    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.mobile-nav.open ul {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .mobile-nav li {
@@ -185,10 +201,6 @@ nav.nav-hidden {
         display: block;
     }
     
-    nav {
-        margin: 0 32px;
-    }
-    
     .mobile-menu-btn.open span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
@@ -199,5 +211,10 @@ nav.nav-hidden {
     
     .mobile-menu-btn.open span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+    }
+    
+    nav {
+        margin: 0 32px;
+        padding: 16px 0;
     }
 }
