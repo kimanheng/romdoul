@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romdoul</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loader">
+            <h1>Romdoul</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+    
+    <nav>
+        <h1><a href="{{ url_for('index') }}">Romdoul</a></h1>
+        <div class="navigation">
+            <ul>
+                <li><h3><a href="{{ url_for('menu') }}">Menu</a></h3></li>
+                <li><h3><a href="{{ url_for('ingredients') }}">Ingredients</a></h3></li>
+                <li><h3><a href="{{ url_for('restaurants') }}">Restaurants</a></h3></li>
+                <li><h3><a href="{{ url_for('chefs') }}">Chefs</a></h3></li>
+            </ul>
+        </div>
+        
+        <div class="nav-right">
+            <h3 class="desktop-about"><a href="{{ url_for('about') }}">About</a></h3>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="divider"></div>
+    
+    <div class="mobile-nav">
+        <ul>
+            <li><h3><a href="{{ url_for('menu') }}">Menu</a></h3></li>
+            <li><h3><a href="{{ url_for('ingredients') }}">Ingredients</a></h3></li>
+            <li><h3><a href="{{ url_for('restaurants') }}">Restaurants</a></h3></li>
+            <li><h3><a href="{{ url_for('chefs') }}">Chefs</a></h3></li>
+            <li><h3><a href="{{ url_for('about') }}">About</a></h3></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+    
+    <footer>
+
+    </footer>
+
+    <svg>
+        <filter id='noiseFilter'>
+            <feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/>
+            <feColorMatrix type="saturate" values="0"/>
+        </filter>
+    </svg>
+      
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
