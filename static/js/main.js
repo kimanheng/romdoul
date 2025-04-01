@@ -16,19 +16,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
+    const circleOverlay = document.querySelector('.circle-overlay');
     
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             document.body.classList.toggle('menu-open');
-            mobileNav.classList.toggle('active');
             
-            const isExpanded = mobileNav.classList.contains('active');
+            const isExpanded = document.body.classList.contains('menu-open');
             menuToggle.setAttribute('aria-expanded', isExpanded);
             
             if (isExpanded) {
-                document.body.style.overflow = 'hidden';
+                // Position the circle origin near the menu toggle button
+                const rect = menuToggle.getBoundingClientRect();
+                circleOverlay.style.top = `${rect.top + rect.height/2}px`;
+                circleOverlay.style.right = `${window.innerWidth - rect.right + rect.width/2}px`;
+                
+                // Expand the circle
+                circleOverlay.classList.add('expand');
+                
+                // Show the menu with a slight delay to match circle expansion
+                setTimeout(() => {
+                    mobileNav.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                }, 150);
             } else {
-                document.body.style.overflow = '';
+                // Hide the menu
+                mobileNav.classList.remove('active');
+                
+                // Collapse the circle
+                setTimeout(() => {
+                    circleOverlay.classList.remove('expand');
+                    document.body.style.overflow = '';
+                }, 100);
             }
         });
     }
