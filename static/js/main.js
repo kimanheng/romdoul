@@ -18,6 +18,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNav = document.querySelector('.mobile-nav');
     const circleOverlay = document.querySelector('.circle-overlay');
     
+    // Set initial position for the circle overlay
+    function setInitialCirclePosition() {
+        if (menuToggle && circleOverlay) {
+            const rect = menuToggle.getBoundingClientRect();
+            const buttonCenterX = rect.right - (rect.width / 2);
+            const buttonCenterY = rect.top + (rect.height / 2);
+            
+            circleOverlay.style.top = `${buttonCenterY}px`;
+            circleOverlay.style.right = `${window.innerWidth - buttonCenterX}px`;
+        }
+    }
+    
+    // Call once on load
+    setInitialCirclePosition();
+    
+    // Update position on resize
+    window.addEventListener('resize', setInitialCirclePosition);
+    
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
             document.body.classList.toggle('menu-open');
@@ -25,12 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
             const isExpanded = document.body.classList.contains('menu-open');
             menuToggle.setAttribute('aria-expanded', isExpanded);
             
+            // Update position before expanding
+            setInitialCirclePosition();
+            
             if (isExpanded) {
-                // Position the circle origin near the menu toggle button
-                const rect = menuToggle.getBoundingClientRect();
-                circleOverlay.style.top = `${rect.top + rect.height/2}px`;
-                circleOverlay.style.right = `${window.innerWidth - rect.right + rect.width/2}px`;
-                
                 // Expand the circle
                 circleOverlay.classList.add('expand');
                 
@@ -38,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     mobileNav.classList.add('active');
                     document.body.style.overflow = 'hidden';
-                }, 150);
+                }, 200);
             } else {
                 // Hide the menu
                 mobileNav.classList.remove('active');
                 
-                // Collapse the circle
+                // Collapse the circle with slight delay
                 setTimeout(() => {
                     circleOverlay.classList.remove('expand');
                     document.body.style.overflow = '';
