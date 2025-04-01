@@ -14,14 +14,6 @@ def menu():
 def ingredients():
     return render_template('ingredients.html')
 
-@app.route('/restaurants')
-def restaurants():
-    return render_template('restaurants.html')
-
-@app.route('/chefs')
-def chefs():
-    return render_template('chefs.html')
-
 @app.route('/about')
 def about():
     return render_template('about.html')
