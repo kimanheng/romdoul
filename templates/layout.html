@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romdoul</title>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
@@ -18,7 +18,10 @@
     </div>
     
     <nav>
-        <h1><a href="{{ url_for('index') }}">Romdoul</a></h1>
+        <div class="logo-title">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Romdoul Logo" class="nav-logo">
+            <h1><a href="{{ url_for('index') }}">Romdoul</a></h1>
+        </div>
         <div class="navigation">
             <ul>
                 <li><h3><a href="{{ url_for('menu') }}">Menu</a></h3></li>

@@ -66,6 +66,17 @@ nav {
     position: relative;
 }
 
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 32px;
+    width: auto;
+    margin-right: 8px;
+}
+
 .nav-right {
     display: flex;
     align-items: center;
@@ -90,7 +101,6 @@ nav {
     margin: 8px 0 0 0;
 }
 
-/* Mobile menu button */
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -110,7 +120,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Mobile Navigation */
 .mobile-nav {
     position: fixed;
     top: 0;
@@ -142,7 +151,6 @@ nav {
     font-size: 24px;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     nav {
         margin: 0 20px;
@@ -156,7 +164,6 @@ nav {
         display: block;
     }
     
-    /* Hamburger to X transformation */
     .menu-open .hamburger-line:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
@@ -172,9 +179,12 @@ nav {
     .desktop-about {
         display: none;
     }
+    
+    .nav-logo {
+        height: 28px;
+    }
 }
 
-/* Loading screen styles */
 .loading-screen {
     position: fixed;
     top: 0;
