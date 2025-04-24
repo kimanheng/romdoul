@@ -6,7 +6,7 @@ recipes = [
     {
         'id': 1,
         'name': 'Amok Trey',
-        'image': 'amok-trey.jpg',
+        'image': 'amok-trey.png',
         'description': 'A traditional Cambodian curry dish made with fish, coconut milk, and kroeung paste. Amok Trey is typically wrapped in banana leaves and steamed.',
         'cooking_time': '45 minutes',
         'difficulty': 'Medium',
@@ -102,7 +102,7 @@ recipes = [
     {
         'id': 4,
         'name': 'Bai Sach Chrouk',
-        'image': 'bai-sach-chrouk.jpg',
+        'image': 'bai-sach-chrouk.webp',
         'description': 'Bai Sach Chrouk is a simple but delicious Cambodian breakfast dish consisting of grilled pork served with broken rice and a side of pickled vegetables.',
         'cooking_time': '35 minutes',
         'difficulty': 'Easy',
@@ -200,7 +200,7 @@ recipes = [
     {
         'id': 7,
         'name': 'Cha Houy Teuk',
-        'image': 'cha-houy-teuk.jpg',
+        'image': 'cha-houy-teuk.webp',
         'description': 'Cha Houy Teuk is a refreshing Cambodian jelly dessert made with agar agar and served with coconut cream. It\'s perfect for hot days.',
         'cooking_time': '20 minutes (plus cooling time)',
         'difficulty': 'Easy',
@@ -288,7 +288,7 @@ recipes = [
     {
         'id': 10,
         'name': 'Prahok Ktiss',
-        'image': 'prahok-ktiss.jpg',
+        'image': 'prahok-ktiss.jpeg',
         'description': 'Prahok Ktiss is a savory dip made with fermented fish paste, pork, and coconut milk. It\'s typically served with fresh vegetables.',
         'cooking_time': '35 minutes',
         'difficulty': 'Medium',
@@ -318,7 +318,7 @@ recipes = [
     {
         'id': 11,
         'name': 'Num Anksom',
-        'image': 'num-anksom.jpg',
+        'image': 'num-anksom.webp',
         'description': 'Num Anksom is a traditional Cambodian sticky rice cake wrapped in banana leaves. It\'s filled with beans, pork, and other savory ingredients.',
         'cooking_time': '60 minutes',
         'difficulty': 'Hard',
