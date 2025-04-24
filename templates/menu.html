@@ -1,3 +1,19 @@
-{% extends "layout.html" %} {% block content %}
-<p>Menu</p>
+{% extends "layout.html" %} 
+{% block content %}
+<div class="menu-container">
+    <div class="recipe-grid">
+        {% for recipe in recipes %}
+        <div class="recipe-item">
+            <a href="{{ url_for('recipe', recipe_id=recipe.id) }}" class="recipe-link">
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <img src="{{ url_for('static', filename='img/recipes/' + recipe.image) }}" alt="{{ recipe.name }}">
+                    </div>
+                </div>
+                <h3 class="recipe-name">{{ recipe.name }}</h3>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

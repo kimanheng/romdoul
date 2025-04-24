@@ -1,3 +1,52 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "layout.html" %} 
+{% block content %}
+<div class="recipe-detail-container">
+    <div class="recipe-header">
+        <h1 class="recipe-title">{{ recipe.name }}</h1>
+        <div class="recipe-meta">
+            <span class="recipe-time">Cooking time: {{ recipe.cooking_time }}</span>
+            <span class="recipe-difficulty">Difficulty: {{ recipe.difficulty }}</span>
+            <span class="recipe-servings">Servings: {{ recipe.servings }}</span>
+        </div>
+    </div>
 
+    <div class="recipe-content">
+        <div class="recipe-featured-image">
+            <img src="{{ url_for('static', filename='img/recipes/' + recipe.image) }}" alt="{{ recipe.name }}">
+        </div>
+
+        <div class="recipe-description">
+            <p>{{ recipe.description }}</p>
+        </div>
+
+        <div class="recipe-sections">
+            <div class="ingredients-section">
+                <h2>Ingredients</h2>
+                <ul>
+                    {% for ingredient in recipe.ingredients %}
+                    <li>{{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="instructions-section">
+                <h2>Instructions</h2>
+                <ol>
+                    {% for step in recipe.instructions %}
+                    <li>{{ step }}</li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe-tips">
+            <h2>Tips</h2>
+            <p>{{ recipe.tips }}</p>
+        </div>
+    </div>
+
+    <div class="recipe-navigation">
+        <a href="{{ url_for('menu') }}" class="back-to-menu">Back to Menu</a>
+    </div>
+</div>
 {% endblock %}
