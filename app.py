@@ -10,14 +10,6 @@ def index():
 def menu():
     return render_template('menu.html')
 
-@app.route('/ingredients')
-def ingredients():
-    return render_template('ingredients.html')
-
-@app.route('/classes')
-def classes():
-    return render_template('classes.html')
-
 @app.route('/about')
 def about():
     return render_template('about.html')

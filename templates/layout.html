@@ -25,13 +25,14 @@
         <div class="navigation">
             <ul>
                 <li><h3><a href="{{ url_for('menu') }}">Menu</a></h3></li>
-                <li><h3><a href="{{ url_for('ingredients') }}">Ingredients</a></h3></li>
-                <li><h3><a href="{{ url_for('classes') }}">Classes</a></h3></li>
+                <li><h3><a href="{{ url_for('about') }}">About</a></h3></li>
             </ul>
         </div>
         
         <div class="nav-right">
-            <h3 class="desktop-about"><a href="{{ url_for('about') }}">About</a></h3>
+            <ul>
+                <li><h3 class="desktop-about"><a href="">Newsletter</a></h3></li>
+            </ul>
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
@@ -46,9 +47,8 @@
     <div class="mobile-nav">
         <ul>
             <li><h3><a href="{{ url_for('menu') }}">Menu</a></h3></li>
-            <li><h3><a href="{{ url_for('ingredients') }}">Ingredients</a></h3></li>
-            <li><h3><a href="{{ url_for('classes') }}">Classes</a></h3></li>
             <li><h3><a href="{{ url_for('about') }}">About</a></h3></li>
+            <li><h3><a href="">Newsletter</a></h3></li>
         </ul>
     </div>
 
