@@ -390,6 +390,10 @@ def index():
 def menu():
     return render_template('menu.html', recipes=recipes)
 
+@app.route('/classes')
+def classes():
+    return render_template('classes.html')
+
 @app.route('/recipe/<int:recipe_id>')
 def recipe(recipe_id):
     recipe = next((r for r in recipes if r['id'] == recipe_id), None)

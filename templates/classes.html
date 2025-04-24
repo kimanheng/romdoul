@@ -1,0 +1,79 @@
+{% extends "layout.html" %} {% block content %}
+<div class="course-container">
+    <div class="course-header">
+        <h1 class="page-title">Cooking Classes</h1>
+        <p class="course-subtitle">Learn authentic Cambodian cooking techniques with our expert chefs</p>
+    </div>
+
+    <div class="limited-offer">
+        <div class="offer-badge">Limited Time Offer</div>
+        <h3>30% OFF on all enrollments until June 30th</h3>
+    </div>
+
+    <div class="course-grid">
+        <div class="course-item">
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="{{ url_for('static', filename='img/cooking-class.jpg') }}" alt="Cambodian Essentials Course">
+                </div>
+                <div class="course-details">
+                    <h2 class="course-title">Cambodian Essentials</h2>
+                    <div class="course-meta">
+                        <span class="course-duration"><i class="icon-clock"></i> 4 Weeks</span>
+                        <span class="course-sessions"><i class="icon-calendar"></i> 8 Sessions</span>
+                    </div>
+                    <p class="course-description">
+                        Master the fundamentals of Cambodian cuisine in this comprehensive course. 
+                        Learn to create traditional dishes using authentic ingredients and techniques passed 
+                        down through generations.
+                    </p>
+                    <div class="course-features">
+                        <h3>What You'll Learn:</h3>
+                        <ul>
+                            <li>Essential Cambodian spice combinations</li>
+                            <li>Traditional cooking methods</li>
+                            <li>Four signature Cambodian dishes</li>
+                            <li>Proper ingredient selection and preparation</li>
+                        </ul>
+                    </div>
+                    <div class="course-cta">
+                        <div class="course-price">
+                            <span class="original-price">$299</span>
+                            <span class="discounted-price">$209</span>
+                        </div>
+                        <a href="https://t.me/+123456789" class="btn btn-primary telegram-btn">Join via Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-info">
+        <div class="info-section">
+            <h2>How It Works</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-number">1</div>
+                    <h3>Register</h3>
+                    <p>Join our Telegram group through the link above</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-number">2</div>
+                    <h3>Schedule</h3>
+                    <p>Select your preferred class schedule</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-number">3</div>
+                    <h3>Prepare</h3>
+                    <p>Get your ingredient list and tools ready</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-number">4</div>
+                    <h3>Cook</h3>
+                    <p>Learn and cook alongside our expert chefs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
