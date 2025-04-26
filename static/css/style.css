@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 :root {
     --background: #832A2A;
     --foreground: #F2EBDB;
+    --font-heading: 'Forum', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
 body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     margin: 32px 0 64px 0;
     padding: 0px;
     overflow-x: hidden;
@@ -20,7 +23,7 @@ body.menu-open {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
     font-weight: 400;
     font-style: normal;
     margin: 0;
@@ -304,7 +307,7 @@ nav {
 .subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
     opacity: 0.9;
     animation: fadeIn 1.5s ease-in-out;
 }
@@ -320,7 +323,7 @@ nav {
 .btn {
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -372,7 +375,7 @@ nav {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 2rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .recipe-grid {
@@ -421,7 +424,7 @@ nav {
 .recipe-name {
     padding: 0.75rem 0;
     text-align: center;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
     font-size: 1.2rem;
 }
 
@@ -463,7 +466,7 @@ nav {
 .recipe-title {
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .recipe-meta {
@@ -506,7 +509,7 @@ nav {
 .recipe-tips h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .ingredients-section ul {
@@ -546,7 +549,7 @@ nav {
     background-color: var(--foreground);
     color: var(--background);
     border-radius: 4px;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     transition: all 0.3s ease;
 }
@@ -608,7 +611,7 @@ nav {
 .page-title {
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .course-subtitle {
@@ -636,7 +639,7 @@ nav {
     font-weight: bold;
     border-radius: 4px;
     margin-bottom: 0.7rem;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     font-size: 0.9rem;
 }
 
@@ -681,7 +684,7 @@ nav {
 .course-title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .course-meta {
@@ -763,7 +766,7 @@ nav {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-family: 'Forum', serif;
+    font-family: var(--font-heading);
 }
 
 .info-cards {
@@ -792,6 +795,7 @@ nav {
     margin: 0 auto 1rem;
     font-weight: bold;
     font-size: 1.2rem;
+    font-family: var(--font-body);
 }
 
 .info-card h3 {
