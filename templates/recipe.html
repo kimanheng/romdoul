@@ -12,7 +12,7 @@
 
     <div class="recipe-content">
         <div class="recipe-featured-image">
-            <img src="{{ url_for('static', filename='img/recipes/' + recipe.image) }}" alt="{{ recipe.name }}">
+            <img src="{{ recipe.image }}" alt="{{ recipe.name }}">
         </div>
 
         <div class="recipe-description">
