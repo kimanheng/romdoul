@@ -6,7 +6,7 @@ recipes = [
     {
         'id': 1,
         'name': 'Amok Trey',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681762373603442/amok-trey.png?ex=680e31c1&is=680ce041&hm=9e4d2262ca8df9b5eb2d9646c0236dddc44e3e39dbd2893fe5c6d949fd781e05&',
+        'image': 'amok-trey.png',
         'description': 'A traditional Cambodian curry dish made with fish, coconut milk, and kroeung paste. Amok Trey is typically wrapped in banana leaves and steamed.',
         'cooking_time': '45 minutes',
         'difficulty': 'Medium',
@@ -37,7 +37,7 @@ recipes = [
     {
         'id': 2,
         'name': 'Lok Lak',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681766064459907/lok-lak.jpg?ex=680e31c2&is=680ce042&hm=c2f40266b726805dec25cf771f8a841e60c00af3c081f72af9c662557f40e156&',
+        'image': 'lok-lak.jpg',
         'description': 'Cambodian Lok Lak is a popular beef stir-fry dish served with a lime and pepper dipping sauce. It\'s traditionally served on a bed of lettuce and tomatoes.',
         'cooking_time': '30 minutes',
         'difficulty': 'Easy',
@@ -69,7 +69,7 @@ recipes = [
     {
         'id': 3,
         'name': 'Nom Banh Chok',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365682245989433364/7PW79dQ.jpg?ex=680e3234&is=680ce0b4&hm=e5b84bb5b4f99a00a8b954f16fa806ba61b545e8e2ee54b245bccff97e761da3&',
+        'image': 'nom-banh-chok.jpg',
         'description': 'Nom Banh Chok, or Cambodian noodles, is a popular breakfast dish consisting of rice noodles topped with a fish-based green curry and fresh vegetables.',
         'cooking_time': '40 minutes',
         'difficulty': 'Medium',
@@ -102,7 +102,7 @@ recipes = [
     {
         'id': 4,
         'name': 'Bai Sach Chrouk',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681763120320682/bai-sach-chrouk.webp?ex=680e31c1&is=680ce041&hm=cfe0a4c83a5748ad943422687c3bd83c3c662588396ac707c99d63542b0f3def&',
+        'image': 'bai-sach-chrouk.webp',
         'description': 'Bai Sach Chrouk is a simple but delicious Cambodian breakfast dish consisting of grilled pork served with broken rice and a side of pickled vegetables.',
         'cooking_time': '35 minutes',
         'difficulty': 'Easy',
@@ -132,7 +132,7 @@ recipes = [
     {
         'id': 5,
         'name': 'Samlor Korko',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681802685186058/samlor-korko.jpg?ex=680e31ca&is=680ce04a&hm=5a835dec0d7d0ec3b9be83594e08bbf983cf25fa9e03305831da609e5db3ee06&',
+        'image': 'samlor-korko.jpg',
         'description': 'Samlor Korko is considered Cambodia\'s national soup, featuring a mix of vegetables, kroeung paste, and pork or fish. It\'s a hearty and flavorful dish.',
         'cooking_time': '50 minutes',
         'difficulty': 'Medium',
@@ -166,7 +166,7 @@ recipes = [
     {
         'id': 6,
         'name': 'Kuy Teav',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681765196234812/kuy-teav.jpg?ex=680e31c1&is=680ce041&hm=078d8193cbc1c8a6a55cb8e2d14c366b65bba22ae781d18c9544c12a9cd02788&',
+        'image': 'kuy-teav.jpg',
         'description': 'Kuy Teav is a popular Cambodian noodle soup typically eaten for breakfast. It features rice noodles in a flavorful pork or beef broth.',
         'cooking_time': '45 minutes',
         'difficulty': 'Medium',
@@ -200,7 +200,7 @@ recipes = [
     {
         'id': 7,
         'name': 'Cha Houy Teuk',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681763719970951/cha-houy-teuk.webp?ex=680e31c1&is=680ce041&hm=c8805f721665b85281ec59d02d3ae88ebd0579f4784714adb40aa6db6040c360&',
+        'image': 'cha-houy-teuk.webp',
         'description': 'Cha Houy Teuk is a refreshing Cambodian jelly dessert made with agar agar and served with coconut cream. It\'s perfect for hot days.',
         'cooking_time': '20 minutes (plus cooling time)',
         'difficulty': 'Easy',
@@ -230,7 +230,7 @@ recipes = [
     {
         'id': 8,
         'name': 'Kralan',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681764663824424/kralan.jpg?ex=680e31c1&is=680ce041&hm=4c322e2ade25c1ab4a5a4fab902c6fe8f455154d2379d4015b1d8978d6f95a8d&',
+        'image': 'kralan.jpg',
         'description': 'Kralan is a traditional Cambodian sticky rice cake cooked in bamboo tubes. It\'s filled with coconut milk, beans, and sometimes black rice.',
         'cooking_time': '60 minutes',
         'difficulty': 'Hard',
@@ -259,7 +259,7 @@ recipes = [
     {
         'id': 9,
         'name': 'Nom Kom',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681766865829950/nom-kom.jpg?ex=680e31c2&is=680ce042&hm=a4f3c7695615b21ccbdae07b2df99c139099db43eee79d93384b737e8e976b35&',
+        'image': 'nom-kom.jpg',
         'description': 'Nom Kom are Cambodian rice dumplings filled with palm sugar and coconut. They\'re wrapped in banana leaves and steamed until tender.',
         'cooking_time': '40 minutes',
         'difficulty': 'Medium',
@@ -288,7 +288,7 @@ recipes = [
     {
         'id': 10,
         'name': 'Prahok Ktiss',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681802282536980/prahok-ktiss.jpeg?ex=680e31ca&is=680ce04a&hm=84bf49fc3af2ab326c562760bfc457fbd22b058677f7b72fca5f08f2b5ccf491&',
+        'image': 'prahok-ktiss.jpeg',
         'description': 'Prahok Ktiss is a savory dip made with fermented fish paste, pork, and coconut milk. It\'s typically served with fresh vegetables.',
         'cooking_time': '35 minutes',
         'difficulty': 'Medium',
@@ -318,7 +318,7 @@ recipes = [
     {
         'id': 11,
         'name': 'Num Anksom',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681767289192468/num-anksom.webp?ex=680e31c2&is=680ce042&hm=e2f277adb074badf68c618f2b4efd0f7cef012e6ce4decf5ad6e0c6ef6431218&',
+        'image': 'num-anksom.webp',
         'description': 'Num Anksom is a traditional Cambodian sticky rice cake wrapped in banana leaves. It\'s filled with beans, pork, and other savory ingredients.',
         'cooking_time': '60 minutes',
         'difficulty': 'Hard',
@@ -349,7 +349,7 @@ recipes = [
     {
         'id': 12,
         'name': 'Char Kroeung',
-        'image': 'https://cdn.discordapp.com/attachments/1365681513554776105/1365681764231544933/char-kroeung.jpg?ex=680e31c1&is=680ce041&hm=672a2277ea653515dcd0d182e1d2ce357c9aedda6452f4887709426a60e0b3a7&',
+        'image': 'char-kroeung.jpg',
         'description': 'Char Kroeung is a flavorful Cambodian stir-fry made with a lemongrass paste called kroeung. It can be made with various proteins.',
         'cooking_time': '25 minutes',
         'difficulty': 'Easy',
