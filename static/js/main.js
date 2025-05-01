@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNav = document.querySelector('.mobile-nav');
     const circleOverlay = document.querySelector('.circle-overlay');
     
-    // Set initial position for the circle overlay
     function setInitialCirclePosition() {
         if (menuToggle && circleOverlay) {
             const rect = menuToggle.getBoundingClientRect();
@@ -30,10 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // Call once on load
     setInitialCirclePosition();
     
-    // Update position on resize
     window.addEventListener('resize', setInitialCirclePosition);
     
     if (menuToggle) {
@@ -43,23 +40,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const isExpanded = document.body.classList.contains('menu-open');
             menuToggle.setAttribute('aria-expanded', isExpanded);
             
-            // Update position before expanding
             setInitialCirclePosition();
             
             if (isExpanded) {
-                // Expand the circle
                 circleOverlay.classList.add('expand');
                 
-                // Show the menu with a slight delay to match circle expansion
                 setTimeout(() => {
                     mobileNav.classList.add('active');
                     document.body.style.overflow = 'hidden';
                 }, 200);
             } else {
-                // Hide the menu
                 mobileNav.classList.remove('active');
                 
-                // Collapse the circle with slight delay
                 setTimeout(() => {
                     circleOverlay.classList.remove('expand');
                     document.body.style.overflow = '';

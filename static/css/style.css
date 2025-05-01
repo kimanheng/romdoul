@@ -170,8 +170,8 @@ nav {
 }
 
 .circle-overlay.expand {
-    width: 600vmax;  /* Much larger to cover any screen size/orientation */
-    height: 600vmax; /* Using vmax unit to ensure coverage on both axes */
+    width: 600vmax;
+    height: 600vmax;
 }
 
 .mobile-nav ul {
@@ -283,7 +283,6 @@ nav {
     100% { opacity: 1; }
 }
 
-/* Hero Section Styles */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -364,7 +363,6 @@ nav {
     }
 }
 
-/* Menu Page Styles */
 .menu-container {
     max-width: calc(100% - 128px);
     margin: 0 64px;
@@ -451,7 +449,6 @@ nav {
     }
 }
 
-/* Recipe Detail Page Styles */
 .recipe-detail-container {
     max-width: calc(100% - 128px);
     margin: 0 64px;
@@ -558,7 +555,6 @@ nav {
     background-color: rgba(242, 235, 219, 0.8);
 }
 
-/* Recipe card link styles */
 .recipe-link {
     display: flex;
     flex-direction: column;
@@ -596,7 +592,6 @@ nav {
     }
 }
 
-/* Course Page Styles */
 .course-container {
     max-width: calc(100% - 128px);
     margin: 0 64px;
@@ -802,7 +797,6 @@ nav {
     margin-bottom: 0.8rem;
 }
 
-/* Footer Styles */
 footer {
     margin: 3rem 64px 0;
     padding-top: 2rem;
